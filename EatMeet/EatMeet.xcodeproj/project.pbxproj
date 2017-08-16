@@ -13,9 +13,10 @@
 		CF0C42781F440F6400DDC6E6 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0C42771F440F6400DDC6E6 /* MainMenu.storyboard */; };
 		CF0C427B1F44110800DDC6E6 /* RestaurantsCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0C42791F44110800DDC6E6 /* RestaurantsCollection.storyboard */; };
 		CF6F48FB1F441E7E006F0C63 /* MainMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F48FA1F441E7E006F0C63 /* MainMenuItem.swift */; };
-		CF6F48FE1F441FDF006F0C63 /* menu.realm in Resources */ = {isa = PBXBuildFile; fileRef = CF6F48FD1F441FDF006F0C63 /* menu.realm */; };
 		CF6F49021F442106006F0C63 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F49011F442106006F0C63 /* RealmConfig.swift */; };
 		CF6F49051F442428006F0C63 /* MainMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F49041F442428006F0C63 /* MainMenuTableViewController.swift */; };
+		CF6F49071F442679006F0C63 /* MainMenuDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F49061F442679006F0C63 /* MainMenuDataProvider.swift */; };
+		CF6F490B1F44667D006F0C63 /* menu.realm in Resources */ = {isa = PBXBuildFile; fileRef = CF6F490A1F44667D006F0C63 /* menu.realm */; };
 		CFED7A401F431A0500FCE29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED7A3F1F431A0500FCE29F /* AppDelegate.swift */; };
 		CFED7A451F431A0500FCE29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFED7A431F431A0500FCE29F /* Main.storyboard */; };
 		CFED7A471F431A0500FCE29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFED7A461F431A0500FCE29F /* Assets.xcassets */; };
@@ -50,9 +51,10 @@
 		CF0C42771F440F6400DDC6E6 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
 		CF0C427A1F44110800DDC6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RestaurantsCollection.storyboard; sourceTree = "<group>"; };
 		CF6F48FA1F441E7E006F0C63 /* MainMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuItem.swift; sourceTree = "<group>"; };
-		CF6F48FD1F441FDF006F0C63 /* menu.realm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = menu.realm; sourceTree = "<group>"; };
 		CF6F49011F442106006F0C63 /* RealmConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		CF6F49041F442428006F0C63 /* MainMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewController.swift; sourceTree = "<group>"; };
+		CF6F49061F442679006F0C63 /* MainMenuDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuDataProvider.swift; sourceTree = "<group>"; };
+		CF6F490A1F44667D006F0C63 /* menu.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu.realm; sourceTree = "<group>"; };
 		CFED7A3C1F431A0500FCE29F /* EatMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFED7A3F1F431A0500FCE29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFED7A441F431A0500FCE29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -203,7 +205,7 @@
 		CF6F48FF1F4420B1006F0C63 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
-				CF6F48FD1F441FDF006F0C63 /* menu.realm */,
+				CF6F490A1F44667D006F0C63 /* menu.realm */,
 				CF6F49011F442106006F0C63 /* RealmConfig.swift */,
 			);
 			name = Realm;
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				CF6F49041F442428006F0C63 /* MainMenuTableViewController.swift */,
+				CF6F49061F442679006F0C63 /* MainMenuDataProvider.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -388,8 +391,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6F490B1F44667D006F0C63 /* menu.realm in Resources */,
 				CF0C42781F440F6400DDC6E6 /* MainMenu.storyboard in Resources */,
-				CF6F48FE1F441FDF006F0C63 /* menu.realm in Resources */,
 				CFED7A4A1F431A0500FCE29F /* LaunchScreen.storyboard in Resources */,
 				CFED7A471F431A0500FCE29F /* Assets.xcassets in Resources */,
 				CFED7A451F431A0500FCE29F /* Main.storyboard in Resources */,
@@ -574,6 +577,7 @@
 				CFED7A401F431A0500FCE29F /* AppDelegate.swift in Sources */,
 				CF6F49021F442106006F0C63 /* RealmConfig.swift in Sources */,
 				CF6F49051F442428006F0C63 /* MainMenuTableViewController.swift in Sources */,
+				CF6F49071F442679006F0C63 /* MainMenuDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

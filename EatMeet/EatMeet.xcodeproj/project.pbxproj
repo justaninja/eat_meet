@@ -21,6 +21,8 @@
 		CF6F49121F447597006F0C63 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F49111F447597006F0C63 /* GroupsTableViewController.swift */; };
 		CF6F49141F4475D3006F0C63 /* GroupsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F49131F4475D3006F0C63 /* GroupsBuilder.swift */; };
 		CFD03E2C1F456186009B26B0 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD03E2B1F456186009B26B0 /* SplitViewController.swift */; };
+		CFD03E301F45664E009B26B0 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD03E2F1F45664E009B26B0 /* NetworkClient.swift */; };
+		CFD03E321F4566C5009B26B0 /* ServerSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFD03E311F4566C5009B26B0 /* ServerSettings.plist */; };
 		CFED7A401F431A0500FCE29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED7A3F1F431A0500FCE29F /* AppDelegate.swift */; };
 		CFED7A451F431A0500FCE29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFED7A431F431A0500FCE29F /* Main.storyboard */; };
 		CFED7A471F431A0500FCE29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFED7A461F431A0500FCE29F /* Assets.xcassets */; };
@@ -63,6 +65,8 @@
 		CF6F49111F447597006F0C63 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
 		CF6F49131F4475D3006F0C63 /* GroupsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsBuilder.swift; sourceTree = "<group>"; };
 		CFD03E2B1F456186009B26B0 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		CFD03E2F1F45664E009B26B0 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		CFD03E311F4566C5009B26B0 /* ServerSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ServerSettings.plist; sourceTree = "<group>"; };
 		CFED7A3C1F431A0500FCE29F /* EatMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFED7A3F1F431A0500FCE29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFED7A441F431A0500FCE29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				CFD03E2D1F45626E009B26B0 /* Controllers */,
+				CF6F48FF1F4420B1006F0C63 /* Realm */,
+				CFD03E2E1F4563A0009B26B0 /* Network */,
 				CF0C42741F440EDE00DDC6E6 /* Storyboards */,
 				CF0C42751F440EED00DDC6E6 /* Resources */,
 				CF0C42761F440F1000DDC6E6 /* SupportingFiles */,
@@ -263,6 +269,15 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		CFD03E2E1F4563A0009B26B0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CFD03E2F1F45664E009B26B0 /* NetworkClient.swift */,
+				CFD03E311F4566C5009B26B0 /* ServerSettings.plist */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		CFED7A331F431A0500FCE29F = {
 			isa = PBXGroup;
 			children = (
@@ -292,7 +307,6 @@
 				CF1A52511F44134900E2E57C /* MainMenu */,
 				CF6F490C1F446F4D006F0C63 /* Groups */,
 				CF1A52521F44135400E2E57C /* Reustarants */,
-				CF6F48FF1F4420B1006F0C63 /* Realm */,
 			);
 			path = EatMeet;
 			sourceTree = "<group>";
@@ -441,6 +455,7 @@
 				CFED7A471F431A0500FCE29F /* Assets.xcassets in Resources */,
 				CFED7A451F431A0500FCE29F /* Main.storyboard in Resources */,
 				CF0C427B1F44110800DDC6E6 /* Restaurants.storyboard in Resources */,
+				CFD03E321F4566C5009B26B0 /* ServerSettings.plist in Resources */,
 				CF6F490F1F447410006F0C63 /* Groups.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,6 +638,7 @@
 				CF6F49141F4475D3006F0C63 /* GroupsBuilder.swift in Sources */,
 				CF6F49021F442106006F0C63 /* RealmConfig.swift in Sources */,
 				CF6F49051F442428006F0C63 /* MainMenuTableViewController.swift in Sources */,
+				CFD03E301F45664E009B26B0 /* NetworkClient.swift in Sources */,
 				CF6F49071F442679006F0C63 /* MainMenuDataProvider.swift in Sources */,
 				CF6F49121F447597006F0C63 /* GroupsTableViewController.swift in Sources */,
 				CFD03E2C1F456186009B26B0 /* SplitViewController.swift in Sources */,

@@ -7,6 +7,8 @@ target 'EatMeet' do
 
   # Pods for EatMeet
   pod 'RealmSwift’
+  pod 'Alamofire', '~> 4.4'
+  pod 'SwiftyJSON', '~> 3.1'
 
   target 'EatMeetTests' do
     inherit! :search_paths

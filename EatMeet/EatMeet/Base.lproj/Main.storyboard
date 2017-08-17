@@ -28,7 +28,7 @@
         <!--Split View Controller-->
         <scene sceneID="WAx-fG-9Q4">
             <objects>
-                <splitViewController id="AeP-60-c92" sceneMemberID="viewController">
+                <splitViewController id="AeP-60-c92" customClass="SplitViewController" customModule="EatMeet" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="68t-tk-vQg" kind="relationship" relationship="masterViewController" id="t26-bk-omh"/>
                         <segue destination="Ul2-kd-Icp" kind="relationship" relationship="detailViewController" id="il0-4k-k7j"/>
@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="316" y="-124"/>
         </scene>
-        <!--RestaurantsCollection-->
+        <!--Restaurants-->
         <scene sceneID="fnV-iB-dWM">
             <objects>
-                <viewControllerPlaceholder storyboardName="RestaurantsCollection" id="Ul2-kd-Icp" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Restaurants" id="Ul2-kd-Icp" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgO-t2-dZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1042" y="334"/>

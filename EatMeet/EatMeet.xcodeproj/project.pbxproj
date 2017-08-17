@@ -11,12 +11,16 @@
 		710944AA2B5C60CD729EB4AA /* Pods_EatMeetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 713B1BECA4D88007AC8CF2F3 /* Pods_EatMeetUITests.framework */; };
 		BD29376E0F8FA8E596E4E239 /* Pods_EatMeet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34660A5869E8AE3070436425 /* Pods_EatMeet.framework */; };
 		CF0C42781F440F6400DDC6E6 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0C42771F440F6400DDC6E6 /* MainMenu.storyboard */; };
-		CF0C427B1F44110800DDC6E6 /* RestaurantsCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0C42791F44110800DDC6E6 /* RestaurantsCollection.storyboard */; };
+		CF0C427B1F44110800DDC6E6 /* Restaurants.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0C42791F44110800DDC6E6 /* Restaurants.storyboard */; };
 		CF6F48FB1F441E7E006F0C63 /* MainMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F48FA1F441E7E006F0C63 /* MainMenuItem.swift */; };
 		CF6F49021F442106006F0C63 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F49011F442106006F0C63 /* RealmConfig.swift */; };
 		CF6F49051F442428006F0C63 /* MainMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F49041F442428006F0C63 /* MainMenuTableViewController.swift */; };
 		CF6F49071F442679006F0C63 /* MainMenuDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F49061F442679006F0C63 /* MainMenuDataProvider.swift */; };
 		CF6F490B1F44667D006F0C63 /* menu.realm in Resources */ = {isa = PBXBuildFile; fileRef = CF6F490A1F44667D006F0C63 /* menu.realm */; };
+		CF6F490F1F447410006F0C63 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6F490E1F447410006F0C63 /* Groups.storyboard */; };
+		CF6F49121F447597006F0C63 /* GroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F49111F447597006F0C63 /* GroupsTableViewController.swift */; };
+		CF6F49141F4475D3006F0C63 /* GroupsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F49131F4475D3006F0C63 /* GroupsBuilder.swift */; };
+		CFD03E2C1F456186009B26B0 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD03E2B1F456186009B26B0 /* SplitViewController.swift */; };
 		CFED7A401F431A0500FCE29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED7A3F1F431A0500FCE29F /* AppDelegate.swift */; };
 		CFED7A451F431A0500FCE29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFED7A431F431A0500FCE29F /* Main.storyboard */; };
 		CFED7A471F431A0500FCE29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFED7A461F431A0500FCE29F /* Assets.xcassets */; };
@@ -49,12 +53,16 @@
 		713B1BECA4D88007AC8CF2F3 /* Pods_EatMeetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatMeetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F9BF0576A69FDF4E7909F8 /* Pods-EatMeetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatMeetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatMeetTests/Pods-EatMeetTests.release.xcconfig"; sourceTree = "<group>"; };
 		CF0C42771F440F6400DDC6E6 /* MainMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
-		CF0C427A1F44110800DDC6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RestaurantsCollection.storyboard; sourceTree = "<group>"; };
+		CF0C427A1F44110800DDC6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Restaurants.storyboard; sourceTree = "<group>"; };
 		CF6F48FA1F441E7E006F0C63 /* MainMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuItem.swift; sourceTree = "<group>"; };
 		CF6F49011F442106006F0C63 /* RealmConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
 		CF6F49041F442428006F0C63 /* MainMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewController.swift; sourceTree = "<group>"; };
 		CF6F49061F442679006F0C63 /* MainMenuDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuDataProvider.swift; sourceTree = "<group>"; };
 		CF6F490A1F44667D006F0C63 /* menu.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu.realm; sourceTree = "<group>"; };
+		CF6F490E1F447410006F0C63 /* Groups.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
+		CF6F49111F447597006F0C63 /* GroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsTableViewController.swift; sourceTree = "<group>"; };
+		CF6F49131F4475D3006F0C63 /* GroupsBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsBuilder.swift; sourceTree = "<group>"; };
+		CFD03E2B1F456186009B26B0 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		CFED7A3C1F431A0500FCE29F /* EatMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFED7A3F1F431A0500FCE29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFED7A441F431A0500FCE29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +135,7 @@
 		CF0C42731F440ED600DDC6E6 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CFD03E2D1F45626E009B26B0 /* Controllers */,
 				CF0C42741F440EDE00DDC6E6 /* Storyboards */,
 				CF0C42751F440EED00DDC6E6 /* Resources */,
 				CF0C42761F440F1000DDC6E6 /* SupportingFiles */,
@@ -170,12 +179,12 @@
 			name = MainMenu;
 			sourceTree = "<group>";
 		};
-		CF1A52521F44135400E2E57C /* RestaurantsCollection */ = {
+		CF1A52521F44135400E2E57C /* Reustarants */ = {
 			isa = PBXGroup;
 			children = (
 				CF1A52541F44138600E2E57C /* Storyboards */,
 			);
-			name = RestaurantsCollection;
+			name = Reustarants;
 			sourceTree = "<group>";
 		};
 		CF1A52531F44137D00E2E57C /* Storyboards */ = {
@@ -189,7 +198,7 @@
 		CF1A52541F44138600E2E57C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				CF0C42791F44110800DDC6E6 /* RestaurantsCollection.storyboard */,
+				CF0C42791F44110800DDC6E6 /* Restaurants.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -216,6 +225,40 @@
 			children = (
 				CF6F49041F442428006F0C63 /* MainMenuTableViewController.swift */,
 				CF6F49061F442679006F0C63 /* MainMenuDataProvider.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CF6F490C1F446F4D006F0C63 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F49101F447574006F0C63 /* Controllers */,
+				CF6F490D1F4473F3006F0C63 /* StoryBoards */,
+			);
+			name = Groups;
+			sourceTree = "<group>";
+		};
+		CF6F490D1F4473F3006F0C63 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F490E1F447410006F0C63 /* Groups.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		CF6F49101F447574006F0C63 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F49111F447597006F0C63 /* GroupsTableViewController.swift */,
+				CF6F49131F4475D3006F0C63 /* GroupsBuilder.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CFD03E2D1F45626E009B26B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFD03E2B1F456186009B26B0 /* SplitViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -247,7 +290,8 @@
 			children = (
 				CF0C42731F440ED600DDC6E6 /* App */,
 				CF1A52511F44134900E2E57C /* MainMenu */,
-				CF1A52521F44135400E2E57C /* RestaurantsCollection */,
+				CF6F490C1F446F4D006F0C63 /* Groups */,
+				CF1A52521F44135400E2E57C /* Reustarants */,
 				CF6F48FF1F4420B1006F0C63 /* Realm */,
 			);
 			path = EatMeet;
@@ -396,7 +440,8 @@
 				CFED7A4A1F431A0500FCE29F /* LaunchScreen.storyboard in Resources */,
 				CFED7A471F431A0500FCE29F /* Assets.xcassets in Resources */,
 				CFED7A451F431A0500FCE29F /* Main.storyboard in Resources */,
-				CF0C427B1F44110800DDC6E6 /* RestaurantsCollection.storyboard in Resources */,
+				CF0C427B1F44110800DDC6E6 /* Restaurants.storyboard in Resources */,
+				CF6F490F1F447410006F0C63 /* Groups.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,9 +620,12 @@
 			files = (
 				CF6F48FB1F441E7E006F0C63 /* MainMenuItem.swift in Sources */,
 				CFED7A401F431A0500FCE29F /* AppDelegate.swift in Sources */,
+				CF6F49141F4475D3006F0C63 /* GroupsBuilder.swift in Sources */,
 				CF6F49021F442106006F0C63 /* RealmConfig.swift in Sources */,
 				CF6F49051F442428006F0C63 /* MainMenuTableViewController.swift in Sources */,
 				CF6F49071F442679006F0C63 /* MainMenuDataProvider.swift in Sources */,
+				CF6F49121F447597006F0C63 /* GroupsTableViewController.swift in Sources */,
+				CFD03E2C1F456186009B26B0 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,12 +661,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CF0C42791F44110800DDC6E6 /* RestaurantsCollection.storyboard */ = {
+		CF0C42791F44110800DDC6E6 /* Restaurants.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CF0C427A1F44110800DDC6E6 /* Base */,
 			);
-			name = RestaurantsCollection.storyboard;
+			name = Restaurants.storyboard;
 			sourceTree = "<group>";
 		};
 		CFED7A431F431A0500FCE29F /* Main.storyboard */ = {

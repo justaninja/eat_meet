@@ -18,7 +18,7 @@ class MainMenuDataProvider: NSObject, UITableViewDataSource {
 
     // MARK: - Properties
     /// Returns all MainMenuItems in the Menu Realm.
-    private var menuItems: Results<MainMenuItem>! = {
+    private lazy var menuItems: Results<MainMenuItem> = {
         guard let realm = try? Realm(configuration: RealmConfig.menu.configuration) else {
             fatalError("There should be a realm")
         }

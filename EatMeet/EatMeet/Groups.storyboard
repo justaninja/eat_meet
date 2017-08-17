@@ -18,12 +18,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" id="4OD-8C-Jrl">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GroupCell" textLabel="kcN-C2-KUf" style="IBUITableViewCellStyleDefault" id="4OD-8C-Jrl">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4OD-8C-Jrl" id="tvl-4Q-nMM">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kcN-C2-KUf">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -33,10 +42,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Groups" id="SPp-kN-S78"/>
+                    <connections>
+                        <outlet property="dataProvider" destination="PaC-8q-dSd" id="L7W-pV-h9p"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2CI-Z9-gqQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="PaC-8q-dSd" customClass="GroupsDataProvider" customModule="EatMeet" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="1274" y="-192"/>
+            <point key="canvasLocation" x="1423" y="-192"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Us2-7d-67u">
@@ -47,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Kjl-OO-mfZ" kind="relationship" relationship="rootViewController" id="ZxL-g1-Qbf"/>
+                        <segue destination="Kjl-OO-mfZ" kind="relationship" relationship="rootViewController" id="c11-KL-Brm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZjX-qv-OzD" userLabel="First Responder" sceneMemberID="firstResponder"/>

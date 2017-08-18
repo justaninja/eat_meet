@@ -20,6 +20,7 @@ class NetworkClient {
 
     private struct URLKeys {
         static let categories = "categories"
+        static let city = "city_id"
     }
 
     // MARK: - Properties
@@ -93,14 +94,27 @@ class NetworkClient {
         }
     }
 
-    /// Gets categories data.
+    /// Gets groups data.
     ///
     /// - Parameters:
+    ///   - type: A group type enum.
+    ///   - cityID: A Zomato City ID. (Prague = 84)
     ///   - success: A closure to call when the request is successed.
     ///   - failure: A closure to call when the request is failed.
-    func getCategories(success: @escaping Success, failure: @escaping Failure) {
-        let relativeURL = baseURL.appendingPathComponent(URLKeys.categories)
-        request(url: relativeURL.absoluteURL, success: { json in
+    func getGroup(for type: GroupType, in cityID: Int = 84, success: @escaping Success, failure: @escaping Failure) {
+        let relativeURL = baseURL.appendingPathComponent(type.rawValue)
+        guard var urlComponents = URLComponents(url: relativeURL, resolvingAgainstBaseURL: true) else {
+            fatalError("There should be URL coomponents")
+        }
+        urlComponents.query = ""
+        let queryItem = URLQueryItem(name: URLKeys.city, value: cityID.description)
+        urlComponents.queryItems?.append(queryItem)
+
+        guard let url = urlComponents.url else {
+            fatalError("There should be an URL")
+        }
+
+        request(url: url, success: { json in
             success(json)
         }) { messages in
             failure(messages)

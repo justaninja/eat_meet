@@ -23,8 +23,8 @@
 		CFD03E2C1F456186009B26B0 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD03E2B1F456186009B26B0 /* SplitViewController.swift */; };
 		CFD03E301F45664E009B26B0 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD03E2F1F45664E009B26B0 /* NetworkClient.swift */; };
 		CFD03E321F4566C5009B26B0 /* ServerSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFD03E311F4566C5009B26B0 /* ServerSettings.plist */; };
-		CFD03E351F45AA63009B26B0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD03E341F45AA63009B26B0 /* Category.swift */; };
-		CFD03E381F45B7D5009B26B0 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD03E371F45B7D5009B26B0 /* CategoryViewModel.swift */; };
+		CFD03E351F45AA63009B26B0 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD03E341F45AA63009B26B0 /* Group.swift */; };
+		CFD03E381F45B7D5009B26B0 /* GroupsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD03E371F45B7D5009B26B0 /* GroupsViewModel.swift */; };
 		CFD03E3A1F45C368009B26B0 /* GroupsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD03E391F45C368009B26B0 /* GroupsDataProvider.swift */; };
 		CFED7A401F431A0500FCE29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED7A3F1F431A0500FCE29F /* AppDelegate.swift */; };
 		CFED7A451F431A0500FCE29F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFED7A431F431A0500FCE29F /* Main.storyboard */; };
@@ -32,6 +32,7 @@
 		CFED7A4A1F431A0500FCE29F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFED7A481F431A0500FCE29F /* LaunchScreen.storyboard */; };
 		CFED7A551F431A0500FCE29F /* EatMeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED7A541F431A0500FCE29F /* EatMeetTests.swift */; };
 		CFED7A601F431A0500FCE29F /* EatMeetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED7A5F1F431A0500FCE29F /* EatMeetUITests.swift */; };
+		CFF3CBF21F46CB41000921FF /* GroupType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3CBF11F46CB41000921FF /* GroupType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +71,8 @@
 		CFD03E2B1F456186009B26B0 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		CFD03E2F1F45664E009B26B0 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		CFD03E311F4566C5009B26B0 /* ServerSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ServerSettings.plist; sourceTree = "<group>"; };
-		CFD03E341F45AA63009B26B0 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		CFD03E371F45B7D5009B26B0 /* CategoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		CFD03E341F45AA63009B26B0 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		CFD03E371F45B7D5009B26B0 /* GroupsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewModel.swift; sourceTree = "<group>"; };
 		CFD03E391F45C368009B26B0 /* GroupsDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsDataProvider.swift; sourceTree = "<group>"; };
 		CFED7A3C1F431A0500FCE29F /* EatMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFED7A3F1F431A0500FCE29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		CFED7A5B1F431A0500FCE29F /* EatMeetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatMeetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFED7A5F1F431A0500FCE29F /* EatMeetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatMeetUITests.swift; sourceTree = "<group>"; };
 		CFED7A611F431A0500FCE29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF3CBF11F46CB41000921FF /* GroupType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupType.swift; sourceTree = "<group>"; };
 		D7D14EDBF298570894171F47 /* Pods-EatMeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatMeet.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatMeet/Pods-EatMeet.release.xcconfig"; sourceTree = "<group>"; };
 		E9B49404C7EB5BC32C7EA185 /* Pods-EatMeetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatMeetUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatMeetUITests/Pods-EatMeetUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EA6560C336359B7BB3F057A7 /* Pods_EatMeetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatMeetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,7 +292,8 @@
 		CFD03E331F45A5D8009B26B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CFD03E341F45AA63009B26B0 /* Category.swift */,
+				CFD03E341F45AA63009B26B0 /* Group.swift */,
+				CFF3CBF11F46CB41000921FF /* GroupType.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -298,7 +301,7 @@
 		CFD03E361F45B793009B26B0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CFD03E371F45B7D5009B26B0 /* CategoryViewModel.swift */,
+				CFD03E371F45B7D5009B26B0 /* GroupsViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -660,12 +663,13 @@
 			files = (
 				CFD03E3A1F45C368009B26B0 /* GroupsDataProvider.swift in Sources */,
 				CF6F48FB1F441E7E006F0C63 /* MainMenuItem.swift in Sources */,
-				CFD03E351F45AA63009B26B0 /* Category.swift in Sources */,
-				CFD03E381F45B7D5009B26B0 /* CategoryViewModel.swift in Sources */,
+				CFD03E351F45AA63009B26B0 /* Group.swift in Sources */,
+				CFD03E381F45B7D5009B26B0 /* GroupsViewModel.swift in Sources */,
 				CFED7A401F431A0500FCE29F /* AppDelegate.swift in Sources */,
 				CF6F49141F4475D3006F0C63 /* GroupsBuilder.swift in Sources */,
 				CF6F49021F442106006F0C63 /* RealmConfig.swift in Sources */,
 				CF6F49051F442428006F0C63 /* MainMenuTableViewController.swift in Sources */,
+				CFF3CBF21F46CB41000921FF /* GroupType.swift in Sources */,
 				CFD03E301F45664E009B26B0 /* NetworkClient.swift in Sources */,
 				CF6F49071F442679006F0C63 /* MainMenuDataProvider.swift in Sources */,
 				CF6F49121F447597006F0C63 /* GroupsTableViewController.swift in Sources */,

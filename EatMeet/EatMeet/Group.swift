@@ -1,5 +1,5 @@
 //
-//  Category.swift
+//  Group.swift
 //  EatMeet
 //
 //  Created by Konstantin Khokhlov on 17.08.17.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-struct Category {
+struct Group {
 
     // MARK: - Nested
     private struct Keys {

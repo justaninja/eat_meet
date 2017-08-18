@@ -16,7 +16,7 @@ class GroupsDataProvider: NSObject, UITableViewDataSource {
     }
 
     // MARK: - Properties
-    var viewModel: CategoryViewModel!
+    var viewModel: GroupsViewModel!
 
     // MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -31,7 +31,7 @@ class GroupsDataProvider: NSObject, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: Keys.cellIdentifier) else {
             fatalError("There should be a cell")
         }
-        let data = viewModel.categoryData(for: indexPath.row)
+        let data = viewModel.groupInfo(for: indexPath.row)
         cell.textLabel?.text = data.name
 
         return cell

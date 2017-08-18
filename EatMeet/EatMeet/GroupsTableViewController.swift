@@ -19,8 +19,9 @@ class GroupsTableViewController: UITableViewController {
 
         tableView.dataSource = dataProvider
 
-        NetworkClient.shared.getCategories(success: { [weak self] json in
-            let viewModel = CategoryViewModel(json: json)
+        NetworkClient.shared.getGroup(for: .establishments, success: { [weak self] json in
+            print(json)
+            let viewModel = GroupsViewModel(json: json)
             self?.dataProvider.viewModel = viewModel
             self?.tableView.reloadData()
         }) { messages in

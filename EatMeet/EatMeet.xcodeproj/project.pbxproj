@@ -33,6 +33,7 @@
 		CFED7A551F431A0500FCE29F /* EatMeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED7A541F431A0500FCE29F /* EatMeetTests.swift */; };
 		CFED7A601F431A0500FCE29F /* EatMeetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFED7A5F1F431A0500FCE29F /* EatMeetUITests.swift */; };
 		CFF3CBF21F46CB41000921FF /* GroupType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3CBF11F46CB41000921FF /* GroupType.swift */; };
+		CFF3CBF61F471D8C000921FF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF3CBF51F471D8C000921FF /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		CFED7A5F1F431A0500FCE29F /* EatMeetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatMeetUITests.swift; sourceTree = "<group>"; };
 		CFED7A611F431A0500FCE29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFF3CBF11F46CB41000921FF /* GroupType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupType.swift; sourceTree = "<group>"; };
+		CFF3CBF51F471D8C000921FF /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		D7D14EDBF298570894171F47 /* Pods-EatMeet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatMeet.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatMeet/Pods-EatMeet.release.xcconfig"; sourceTree = "<group>"; };
 		E9B49404C7EB5BC32C7EA185 /* Pods-EatMeetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatMeetUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatMeetUITests/Pods-EatMeetUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EA6560C336359B7BB3F057A7 /* Pods_EatMeetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatMeetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 		CF0C42731F440ED600DDC6E6 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CFF3CBF41F471D57000921FF /* Extensions */,
 				CFD03E2D1F45626E009B26B0 /* Controllers */,
 				CF6F48FF1F4420B1006F0C63 /* Realm */,
 				CFD03E2E1F4563A0009B26B0 /* Network */,
@@ -355,6 +358,14 @@
 				CFED7A611F431A0500FCE29F /* Info.plist */,
 			);
 			path = EatMeetUITests;
+			sourceTree = "<group>";
+		};
+		CFF3CBF41F471D57000921FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFF3CBF51F471D8C000921FF /* String.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -665,6 +676,7 @@
 				CF6F48FB1F441E7E006F0C63 /* MainMenuItem.swift in Sources */,
 				CFD03E351F45AA63009B26B0 /* Group.swift in Sources */,
 				CFD03E381F45B7D5009B26B0 /* GroupsViewModel.swift in Sources */,
+				CFF3CBF61F471D8C000921FF /* String.swift in Sources */,
 				CFED7A401F431A0500FCE29F /* AppDelegate.swift in Sources */,
 				CF6F49141F4475D3006F0C63 /* GroupsBuilder.swift in Sources */,
 				CF6F49021F442106006F0C63 /* RealmConfig.swift in Sources */,

@@ -11,20 +11,13 @@ import SwiftyJSON
 
 struct Group {
 
-    // MARK: - Nested
-    private struct Keys {
-        static let id = "id"
-        static let name = "name"
-    }
-
     // MARK: - Properties
     let id: Int?
     let name: String?
 
     // MARK: - Inits
-    init(json: JSON) {
-        id = json[Keys.id].int
-        name = json[Keys.name].string
+    init(type: GroupType, json: JSON) {
+        id = json[type.id].int
+        name = json[type.name].string
     }
-
 }

@@ -19,7 +19,6 @@ class NetworkClient {
     }
 
     private struct URLKeys {
-        static let categories = "categories"
         static let city = "city_id"
     }
 
@@ -104,7 +103,7 @@ class NetworkClient {
     func getGroup(for type: GroupType, in cityID: Int = 84, success: @escaping Success, failure: @escaping Failure) {
         let relativeURL = baseURL.appendingPathComponent(type.rawValue)
         guard var urlComponents = URLComponents(url: relativeURL, resolvingAgainstBaseURL: true) else {
-            fatalError("There should be URL coomponents")
+            fatalError("There should be URL components")
         }
         urlComponents.query = ""
         let queryItem = URLQueryItem(name: URLKeys.city, value: cityID.description)

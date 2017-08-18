@@ -11,11 +11,6 @@ import SwiftyJSON
 
 struct GroupsViewModel {
 
-    // MARK: - Nested
-    private struct Keys {
-        static let categories = "categories"
-    }
-
     // MARK: - Properties
     private let groups: [Group]
 
@@ -25,19 +20,19 @@ struct GroupsViewModel {
     }
 
     // MARK: - Inits
-    init(json: JSON) {
-        let array = json[Keys.categories].arrayValue
-        groups = array.map { Group(json: $0[Keys.categories]) }
+    init(for type: GroupType, json: JSON) {
+        let array = json[type.rawValue].arrayValue
+        groups = array.map { Group(type: type, json: $0[type.unit]) }
     }
 
-    /// Returns a tuple of category data.
+    /// Returns a tuple of group's data.
     ///
     /// - Parameter index: An index for a row.
-    /// - Returns: A tuple of an ID and a Name for a category.
+    /// - Returns: A tuple of an ID and a Name for a group.
     func groupInfo(for index: Int) -> (id: Int?, name: String?) {
         let group = groups[index]
 
-        return (group.id, group.name)
+        return (group.id, group.name?.cleared)
     }
 
 }
